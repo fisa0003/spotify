@@ -1,4 +1,12 @@
 ---
+import "../styles/global.css";
+import Button from '../components/Button.astro';
+import PlaylistCard from '../components/PlaylistCard.astro';
+import Shelf from '../components/Shelf.astro';
+import Sidebar from '../components/Sidebar.astro';
+
+
+
 
 ---
 
@@ -8,9 +16,22 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Spotify</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<h1>Spotify</h1>
+
+		<div class="grid_1-1">
+		<div>
+		<Sidebar></Sidebar>
+	</div>
+
+<div>
+<Shelf></Shelf>
+<Shelf></Shelf>
+</div>
+</div>
 	</body>
 </html>
+
+

@@ -1,0 +1,30 @@
+---
+const { variant } = Astro.props;
+import Button from '../components/Button.astro';
+
+---
+
+<div>
+<h2>Your library</h2>
+
+<div class="section">
+<h3>Create your first playlist</h3>
+<p>It's easy, we'll help you</p>
+<Button variant="primary" size="medium">Create playlist</Button></div>
+
+<div class="section">
+    <h3>Create your first playlist</h3>
+    <p>It's easy, we'll help you</p>
+    <Button variant="primary" size="medium">Browse podcast</Button></div>
+    </div>
+
+    <style>
+        .section {
+            background-color: grey;
+            padding: 20px 20px;
+            margin: 20px 20px;
+            display: inline-block
+        }
+    </style>
+
+</div>

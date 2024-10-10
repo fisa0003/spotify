@@ -1,0 +1,25 @@
+---
+const { variant, imgSrc, imgAlt, cardName } = Astro.props;
+---
+
+<div>
+<img src={imgSrc} alt={imgAlt || "playlistcard"} class={variant}/>
+<p class="artist_name">{cardName}</p>
+</div>
+
+<style>
+  .album {
+    border-radius: 20px;
+    color: white;
+   }
+   .artist {
+    border-radius: 700px;
+    width: 300px;
+    color: white;
+
+   }
+   .artist_name {
+color: white;
+   }
+   
+</style>
